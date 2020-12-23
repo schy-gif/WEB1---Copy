@@ -1,16 +1,17 @@
-.grid {
+.layout{
    display: grid;
-   grid-template-columns: repeat(4, 1fr);
+   grid-template-columns: repeat(5, 1fr);
     grid-auto-rows: 100vh;
     padding: none;
 
+
 }
-.block1, .block2, .block3, .block4 {
+.layout1 {
   color: green;
    padding: none;
    margin: 0;
-    border:2px solid #000;
-  box-sizing:border-box;
+    border:1px solid #000;
+/*  box-sizing:border-box;*/
   top: 0;
   background: white;
   
@@ -18,17 +19,15 @@
 
 }
 
-#logo{
-  width: 20vw;
+.logo {
+
+left: 10vw;
+ width: 20vw;
   z-index: 4;
 
 }
 
-.block2 :hover {
-color: black;
-
-}
-.block1 {
+#layout1a {
  /*  border:2px solid #000;
   box-sizing:border-box;*/
   grid-column-start: 1;
@@ -43,27 +42,48 @@ color: black;
   /*background: red;*/
 }
 
+.heading{
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;*/
+  font-family: arial black;
+ padding-top: 0;
+/* color: white;*/
+ font-size: 1.5em;
+}
+
 .rightTocity{
   font-family: arial black;
 }
 
-.block2 {
-grid-column-start: 2;
-  grid-column-end: 4; 
+#cityScene {
+
+  z-index: 10;
+  width: 20vw;
+    transform: scale(.2, .2);
+
+}
+#layout1b {
+grid-column-start: 3;
+  grid-column-end: 5; 
   grid-row: 1; 
   z-index: 3;
-  padding-top: 10vw;
+  padding-top: 4vw;
   padding-left: 3vw;
-  padding-right: 8vw;
+  padding-right: 3vw;
   font-size: .85em;
  
 }
 
-.block3 {
- grid-column-start: 3;
-  grid-column-end: 5; 
+#layout1c {
+ grid-column-start: 5;
+  grid-column-end: 6; 
   grid-row: 1; 
-  z-index: 2;
+  z-index: 5;
+   padding-top: 4vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  font-size: .85em;
+ 
 
 }
 
